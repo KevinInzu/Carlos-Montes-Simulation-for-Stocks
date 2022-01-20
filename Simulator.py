@@ -54,5 +54,6 @@ plt.show()
 
 #Generate Histogram of last-day prices
 sns.distplot(pd.DataFrame(price_paths).iloc[-1])
-plt.xlabel("Price after " + str(days) + " days")
+plt.xlabel("Price for " + ticker +  " after "  + str(days) + " days")
+plt.ylabel("Probablilty")
 plt.show()
